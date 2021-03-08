@@ -72,6 +72,7 @@ final class ActionSheetCancelActionView: UIView {
             // underneath the label to avoid blurring the label. The blur passes through touches so the button
             // can still be tapped.
             self.bringSubviewToFront(self.blurBackground)
+            if visualStyle.backgroundColor != nil { self.blurBackground.effect = nil }
         }
 
         self.cancelLabel.translatesAutoresizingMaskIntoConstraints = false

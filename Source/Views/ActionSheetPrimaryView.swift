@@ -36,6 +36,7 @@ final class ActionSheetPrimaryView: UIView {
         self.configure(visualStyle: visualStyle)
 
         let backgroundBlur = self.buildBackgroundBlur(effect: visualStyle.blurEffect)
+        if visualStyle.backgroundColor != nil { backgroundBlur.effect = nil }
         let labelVibrancy = self.buildLabelVibrancy(effect: visualStyle.blurEffect)
         let contentContainer = UIView()
         contentContainer.translatesAutoresizingMaskIntoConstraints = false
