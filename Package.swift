@@ -21,6 +21,7 @@ let package = Package(
             exclude: [
                 "Supporting Files",
             ],
+            resources: [.copy("PrivacyInfo.xcprivacy")],
             linkerSettings: [
                 .linkedFramework("UIKit"),
             ]
